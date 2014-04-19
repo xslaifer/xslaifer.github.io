@@ -1,0 +1,268 @@
+body
+	background #45505c
+	font-size 16px
+	margin 0
+	padding 0
+	width 100%
+	font-family: 'Exo', sans-serif;
+
+.cabecera
+	width 100%
+	text-align center
+	color white
+	margin 1em
+.titulo
+	//background -webkit-radial-gradient(#0d56a6 20%,#14385F 60%, #0F4075 100%)
+	background rgba(62,79,91,0.7)
+	padding 2em 4em
+	width 300px
+	margin auto
+	font-family: 'Orbitron', sans-serif;
+	font-size 2em
+.contenedor
+
+	width 100%
+.radius
+	width 150px
+	height 150px
+	background rgb(255, 214, 0)
+	border-radius 50%
+	cursor pointer
+.circulo
+	position relative
+
+	height 300px
+
+.circulo5
+	top 1em
+	position absolute
+	right 2em
+	&:hover
+		-webkit-animation 3s mueve 1
+
+.circulo4
+	top 6em
+	position absolute
+	right 20em
+
+.circulo3
+	top 1em
+	margin auto
+	border 15px solid #45505c
+	-webkit-transition 1s ease
+	&:hover
+		//-webkit-animation 2s aro 1
+		background transparent
+		border 15px solid rgb(255, 214, 0)
+
+
+.circulo2
+	top 6em
+	position absolute
+	left 20em
+	&:hover
+		-webkit-animation 2s bote 1
+
+.circulo1
+	top 1em
+	position absolute
+	left 2em
+
+.con_foto
+	background #45505c
+
+.cont_imagen
+	text-align center
+.foto
+	width 200px
+	height 200px
+	margin 1em
+	border-radius 50%
+	&:hover
+		-webkit-animation 1s girar 1
+
+.portafolio
+	width 100%
+.estil
+	color white
+	margin 1em
+	font-size 1.2em
+
+.inline_porta
+	width 29%
+	display inline-block
+	margin 1em
+	box-shadow 15px 15px 20px black
+	cursor pointer
+.centro
+	margin auto
+	width 80%
+	z-index 0
+.img_imagenes
+	width 100%
+
+.img_portafolio1
+	position relative
+
+.emergente1
+	position absolute
+	left 15em
+	top 65em
+	margin-right 20em
+	width 60%
+	height 400px
+	background rgb(255, 214, 0)
+
+	display none
+	z-index 1
+.cerrar
+	color white
+	background black
+	//position right
+	top 0
+	border-radius 50%
+	float right
+	padding 0 0.3em
+	cursor pointer
+	&:hover
+		color black
+		background white
+.img_igual
+	width 80%
+	height 390px
+	margin 0.2em 0.1em 0.2em 1em
+	-webkit-transition 0.5s ease
+.emergente_img1
+	display none
+.emergente_img2
+	display none
+.emergente_img3
+	display none
+.boton
+	color white
+	background black
+	//position right
+	border-radius 50%
+	display block
+	padding 0 0.3em
+	cursor pointer
+	
+.uno
+	top 18em
+	position absolute
+	right 5em
+.dos
+	top 18em
+	position absolute
+	right 3em
+.tres
+	top 18em
+	position absolute
+	right 1em
+
+//webkit-keyframS
+@-webkit-keyframes girar {
+  0% {
+    -webkit-transform: perspective(200px) translateZ(0) rotateY(0) scale(1);
+    -webkit-animation-timing-function: ease-out;
+  }
+
+  40% {
+    -webkit-transform: perspective(200px) translateZ(30px) rotateY(150deg) scale(1);
+    -webkit-animation-timing-function: ease-out;
+
+  }
+
+  50% {
+    -webkit-transform: perspective(200px) translateZ(30px) rotateY(210deg) scale(1);
+    -webkit-animation-timing-function: ease-in;
+
+  }
+
+  80% {
+    -webkit-transform: perspective(200px) translateZ(0) rotateY(360deg) scale(.95);
+    -webkit-animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-transform: perspective(200px) translateZ(0) rotateY(360deg) scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+	
+
+@-webkit-keyframes bote
+	0%
+		
+		top 6em
+
+	40%
+		top 0
+
+	60%
+		
+		top 6em 
+
+	80%
+		top 3em
+
+	100%
+		top 6em
+
+
+
+
+@-webkit-keyframes aro
+	
+	
+	20%
+		background transparent
+		border 15px solid  rgb(255, 224, 0)
+
+	40%
+		background transparent		
+		border 15px solid  orange
+
+	60%
+		background transparent		
+		border 15px solid  orange
+		
+	80%
+		background transparent
+		border 15px solid  rgb(255, 224, 0)
+		
+
+	100%
+		background orange
+		border 15px solid  yellow
+
+
+
+@-webkit-keyframes mueve
+	
+	
+	20%
+		
+		right 0
+
+	40%
+		right 20em	
+		scale 0.8
+		opacity 0.7
+
+	60%
+		right 40em	
+		scale 0.5
+		opacity 0
+		
+	80%
+		right 20em	
+		scale 0.8
+		opacity 0.5
+		
+
+	100%
+		right 2em	
+		scale 1
+		opacity 1
+
