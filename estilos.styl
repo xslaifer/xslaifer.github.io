@@ -1,3 +1,9 @@
+@import 'nib/vendor'
+
+@import 'nib/gradients'
+
+vendor-prefixes = o ms moz webkit
+
 body
 	background #45505c
 	font-size 16px
@@ -5,7 +11,7 @@ body
 	padding 0
 	width 100%
 	font-family: 'Exo', sans-serif;
-	background -webkit-radial-gradient(#45505c 20%,#4A5561 60%,#393E42 100%)
+	background radial-gradient(#45505c 20%,#4A5561 60%,#393E42 100%)
 	//background #45505c
 .cabecera
 	width 100%
@@ -41,7 +47,7 @@ body
 	height 150px
 	background #5C6372
 	border-radius 50%
-	cursor pointer
+	
 	//background -webkit-radial-gradient(#45525F 20%,#455261 60%,#2F3B44 100%)
 .circulo
 	position relative
@@ -52,6 +58,8 @@ body
 	top 1em
 	position absolute
 	right 2em
+	.puntero
+		cursor pointer
 
 .circulo4
 	top 6em
@@ -84,7 +92,7 @@ body
 	margin 1em
 	border-radius 50%
 	&:hover
-		-webkit-animation 1s girar 1
+			animation 1s girar 1
 
 .portafolio
 	width 100%
@@ -138,7 +146,7 @@ body
 	width 80%
 	height 390px
 	margin 0.2em 0.1em 0.2em 1em
-	-webkit-transition 0.5s ease
+	transition 0.5s ease
 .emergente_img1
 	display none
 .emergente_img2
@@ -188,35 +196,35 @@ body
 //webkit-keyframS
 @-webkit-keyframes girar {
   0% {
-    -webkit-transform: perspective(200px) translateZ(0) rotateY(0) scale(1);
-    -webkit-animation-timing-function: ease-out;
+    	transform: perspective(200px) translateZ(0) rotateY(0) scale(1);
+   		animation-timing-function: ease-out;
   }
 
   40% {
-    -webkit-transform: perspective(200px) translateZ(30px) rotateY(150deg) scale(1);
-    -webkit-animation-timing-function: ease-out;
+   		transform: perspective(200px) translateZ(30px) rotateY(150deg) scale(1);
+   		animation-timing-function: ease-out;
 
   }
 
   50% {
-    -webkit-transform: perspective(200px) translateZ(30px) rotateY(210deg) scale(1);
-    -webkit-animation-timing-function: ease-in;
+    	transform: perspective(200px) translateZ(30px) rotateY(210deg) scale(1);
+    	animation-timing-function: ease-in;
 
   }
 
   80% {
-    -webkit-transform: perspective(200px) translateZ(0) rotateY(360deg) scale(.95);
-    -webkit-animation-timing-function: ease-in;
+    	transform: perspective(200px) translateZ(0) rotateY(360deg) scale(.95);
+    	animation-timing-function: ease-in;
   }
 
   100% {
-    -webkit-transform: perspective(200px) translateZ(0) rotateY(360deg) scale(1);
-    -webkit-animation-timing-function: ease-in;
+    	transform: perspective(200px) translateZ(0) rotateY(360deg) scale(1);
+    	animation-timing-function: ease-in;
   }
 }
 	
 
-@-webkit-keyframes bote
+/*@-webkit-keyframes bote
 	0%
 		
 		top 6em
