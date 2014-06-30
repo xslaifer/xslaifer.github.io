@@ -388,5 +388,8 @@ margin: auto;
 	margin-top:15em; 
 }
 
-
+.btn_estatica ul li{
+	
+	display: block;
+}
 }
