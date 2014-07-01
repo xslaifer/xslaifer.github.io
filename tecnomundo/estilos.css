@@ -86,6 +86,10 @@ padding: 0.5em 4em;
 position: relative;
 
 }
+.novedades_cont, .actualidad_cont{
+
+	padding-top: 3em;
+}
 section .novedades .cont_imagen1{
 position: absolute;
 top: 1em;
@@ -391,5 +395,10 @@ margin: auto;
 .btn_estatica ul li{
 	
 	display: block;
+}
+
+.novedades_cont, .actualidad_cont{
+
+	padding-top: 5em;
 }
 }

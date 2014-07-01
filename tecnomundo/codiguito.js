@@ -14,13 +14,13 @@ $(document).ready(function(){
 
   $("#novedades").click(function () {
     $("html,body").animate({
-        scrollTop: $(".novedades").offset().top
+        scrollTop: $(".novedades_cont").offset().top
     }, 1000);
 });
 
   $("#actualidad").click(function () {
     $("html,body").animate({
-        scrollTop: $(".cajas").offset().top
+        scrollTop: $(".actualidad_cont").offset().top
     }, 1000);
 });
 
